@@ -1,0 +1,17 @@
+#exportContent {
+    -webkit-print-color-adjust:exact !important;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+#logoCBM {
+    height: 125px;
+    width: 125px;
+}
+
+.exemplo {
+    display: inline-block;
+}
