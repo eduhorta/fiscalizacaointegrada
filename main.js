@@ -1,6 +1,32 @@
 function preencher() {
-    const testando = document.getElementById('testando').value
-    console.log(testando)
+    const razao = document.getElementById('razao').value
+    const cnpj = document.getElementById('cnpj').value
+    const endereco = document.getElementById('endereco').value
+    const numero = document.getElementById('numero').value
+    const bairro = document.getElementById('bairro').value
+    const cidade = document.getElementById('cidade').value
+    const infracao = document.getElementById('infracao').value
+    const notificacao = document.getElementById('notificacao').value
+    const vistoriador1 = document.getElementById('vistoriador1').value
+    const vistoriador2 = document.getElementById('vistoriador2').value
+    const matricula1 = document.getElementById('matricula1').value
+    const matricula2 = document.getElementById('matricula2').value
+    const data = document.getElementById('data').value
+    document.getElementById('razaoD').innerHTML = razao;
+    document.getElementById('cnpjD').innerHTML = cnpj;
+    document.getElementById('enderecoD').innerHTML = endereco;
+    document.getElementById('numeroD').innerHTML = numero;
+    document.getElementById('bairroD').innerHTML = bairro;    
+    document.getElementById('cidadeD').innerHTML = cidade;
+    //Cidade ao final do termo de infração D1
+    document.getElementById('cidadeD1').innerHTML = cidade;
+    document.getElementById('infracaoD').innerHTML = infracao;
+    document.getElementById('notificacaoD').innerHTML = notificacao;
+    document.getElementById('vistoriador1D').innerHTML = vistoriador1;
+    document.getElementById('vistoriador2D').innerHTML = vistoriador2;
+    document.getElementById('matricula1D').innerHTML = matricula1;
+    document.getElementById('matricula2D').innerHTML = matricula2;
+    document.getElementById('dataD').innerHTML = data;
 }
 
 function Export2Doc(element, filename = '') {

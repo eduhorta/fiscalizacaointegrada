@@ -10,24 +10,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <div class="container flex justify-center items-center">
-        <form class="w-full max-w-sm">
-            <div class="flex items-center border-b border-teal-500 py-2">
-                <input id="testando" class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Name" aria-label="Name">
-            </div>
-            <div class="flex items-center border-b border-teal-500 py-2">
-                <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="email" placeholder="Email" aria-label="Email">
-            </div>
-            <div class="flex items-center border-b border-teal-500 py-2">
-                <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Phone Number" aria-label="Phone Number">
-            </div>
-            <div class="flex items-center border-b border-teal-500 py-2">
-                <textarea class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" placeholder="Message" aria-label="Message"></textarea>
-            </div>
-        </form>
-    </div>
-    <div>
+    <form class="flex flex-wrap md:flex-row">
+        <div class="w-full md:w-1/2 mb-4">
+          <label class="block text-gray-700 mb-2 ml-1" for="razao">Razão Social</label>
+          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="razao" type="text" placeholder="Razão Social">
+        </div>
+        <div class="w-full md:w-1/2 mb-4">
+          <label class="block text-gray-700 mb-2 ml-1" for="cnpj">CNPJ</label>
+          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cnpj" type="email" placeholder="XX.XXX.XXX/0001-XX">
+        </div>
+        <div class="w-full md:w-1/2 mb-4">
+          <label class="block text-gray-700 mb-2 ml-1" for="website">Rua/Avenida/Logradouro</label>
+          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="endereco" type="text" placeholder="Rua/Avenida Exemplo">
+        </div>
+        <div class="w-full md:w-1/2 mb-4">
+          <label class="block text-gray-700 mb-2 ml-1" for="message">Nº da edificação</label>
+          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="numero" type="text" placeholder="302">
+        </div>
+        <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Bairro/Distrito</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="bairro" type="text" placeholder="Bairro/Distrito">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Cidade</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cidade" type="text" placeholder="Cidade">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Nº Advertência Escrita/Infração</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="infracao" type="text" placeholder="XXXX/202X">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Nº Notificação</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="notificacao" type="text" placeholder="XXXX/202X">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Vistoriador 1</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="vistoriador1" type="text" placeholder="Fulano Pereira da Silva - Sd BM">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Matrícula - Vistoriador 1</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula1" type="text" placeholder="89.64X.XXX-X">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Vistoriador 2</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="vistoriador2" type="text" placeholder="Beltrano Oliveira de Jesus - Sd BM">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Matrícula - Vistoriador 2</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula2" type="text" placeholder="89.64X.XXX-X">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Data da fiscalização</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="data" type="text" placeholder="01 de janeiro de 2023">
+          </div>
+        <div class="w-full">
+          <button onclick="preencher();Export2Doc('exportContent');" class="bg-red-400 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+            Tudo certo!
+          </button>
+        </div>
+      </form>
     <!-- DIV DO CONTEÚDO A SER EXPORTADO EM DOC -->
     <div id="exportContent">       
         <table>
@@ -37,27 +78,25 @@
                 <th><img style="width:100px;height:100px;" id="logoCBM" src="/img/logoCBM.jpg" alt="" srcset=""></th>
             </tr>
         </table>
-       <p style="margin-left: 80px;"><b>AUTO DE INFRAÇÃO - ADVERTÊNCIA ESCRITA Nº (   /2022)</b></p>
-       <p style="font-size:14px;"><b>Termo de Notificação de referência: nº </b></p>       
-       <p style="text-align:justify">Fica o (a) <b>Sr. (a)		CPF:_______________________,</b>                   responsável pelo <b>                                                                          ,CNPJ                                        </b>, situado (a) no (a)                                                                                                                   ,nº             -   município de <b>NOVA VIÇOSA</b>, Estado da Bahia, na forma da Lei, <b>ADVERTIDO</b> das irregularidades verificadas na edificação, estrutura ou área de risco acima informada, constantes na notificação anexa e do descumprimento às Normas de Segurança Contra Incêndio e Pânico, por ter infringido o (s) dispositivo (s) abaixo (s) descrito (s) da <b>Lei Estadual nº 12.929 de 27 de dezembro de 2013, Art. 12:</b></p>
+       <p style="margin-left: 80px;"><b>AUTO DE INFRAÇÃO - ADVERTÊNCIA ESCRITA Nº (<span id="infracaoD"></span>)</b></p>
+       <p style="font-size:14px;"><b>Termo de Notificação de referência: nº <span id="notificacaoD"></span> </b></p>       
+       <p style="text-align:justify">Fica o (a) <b>Sr. (a)___________________________________________________ CPF:_______________________,</b>                   responsável pelo <span id="razaoD"></span>, <b>CNPJ: <span id="cnpjD"></span>                                        </b>, situado (a) no (a) <span id="enderecoD"></span>                                                                                                                  ,nº <span id="numeroD"></span>, bairro <span id="bairroD"></span>             -   município de <b><span id="cidadeD"></span></b>, Estado da Bahia, na forma da Lei, <b>ADVERTIDO</b> das irregularidades verificadas na edificação, estrutura ou área de risco acima informada, constantes na notificação anexa e do descumprimento às Normas de Segurança Contra Incêndio e Pânico, por ter infringido o (s) dispositivo (s) abaixo (s) descrito (s) da <b>Lei Estadual nº 12.929 de 27 de dezembro de 2013, Art. 12:</b></p>
        <p style="text-align:justify">(  ) I - deixar de adotar as medidas de segurança contra incêndio previstas no art. 3º desta Lei, em Regulamento e nas demais normas técnicas regulamentares; <br>(  ) II - instalar os sistemas de proteção contra incêndio e pânico em desacordo com as especificações do projeto ou com as normas técnicas regulamentares;<br>(  ) III - modificar as características dos sistemas e meios de proteção contra incêndio e pânico ou não fazer a manutenção adequada dos mesmos;<br>(  ) IV - ocultar, remover, inutilizar, destruir ou substituir os meios de proteção contra incêndio e pânico por outros que não atendam às exigências legais e regulamentares;<br>(  ) V - dificultar, embaraçar ou frustrar ação fiscalizadora dos vistoriadores do Corpo de Bombeiros Militar da Bahia.</p>
-       <p style="text-align:justify;font-size:14px;"><b><u>Observações:</u></b><br>Os detalhamentos das irregularidades observadas encontram-se descritos na notificação de referência anexa. Prazo para regularização: (  ) 15 (quinze) dias (   ) 30 (trinta) dias (   ) 60 dias.<br>O não cumprimento das exigências apresentadas na notificação de referência anexa dentro do prazo estabelecido,  sujeitará   o   infrator   a   penalidade   de   multa,   no   valor   de   R$  380.00 (TREZENTOS E OITENTA REAIS) , conforme previsto na TABELA 8 do Decreto Estadual nº 16.302 de 27 de agosto de 2015.</p>
+       <p style="text-align:justify;font-size:14px;"><b><u>Observações:</u></b><br>Os detalhamentos das irregularidades observadas encontram-se descritos na notificação de referência anexa. Prazo para regularização: (  ) 15 (quinze) dias (   ) 30 (trinta) dias (   ) 60 dias.<br>O não cumprimento das exigências apresentadas na notificação de referência anexa dentro do prazo estabelecido,  sujeitará   o   infrator   a   penalidade   de   multa,   no   valor   de   R$  ___________________________________________________ , conforme previsto na TABELA 8 do Decreto Estadual nº 16.302 de 27 de agosto de 2015.</p>
        <p style="font-size:14px;"><b><u>Defesa e recurso:</u></b><br><span style="text-align:justify">V. S.ª poderá apresentar, no prazo de 10 (dez) dias úteis, a contar da presente data, recurso perante o Corpo de Bombeiros Militar da Bahia, de acordo previsão da Instrução Técnica nº 02.
         De acordo com a Lei lavrei o presente auto, por ordem do Sr. TEN CEL HELBER,  comandante da OBM, que depois de lido e achado conforme, vai assinado pelos vistoriadores/fiscais e pelo responsável.
         </span></p>
-        <p style="text-align:right;font-size:14px;"> NOVA VIÇOSA, 17 de dezembro de 2022, às	      h	       min.</p>
+        <p style="text-align:right;font-size:14px;"> <span id="cidadeD1"></span>-BA, <span id="dataD"></span>, às &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min.</p>
+        <br>
         <table style="font-size:14px;">
-            <td>Nome: Bárbara Sabaine R. Leal – SD BM<br>Vistoriador/Fiscal -Mat.: 89.645.569-9</td>
+            <td>Nome: <span id="vistoriador1D"></span><br>Vistoriador/Fiscal -Mat.: <span id="matricula1D"></span></td>
             <td></td>
-            <td>Nome: Rodnei Smith Teixeira da Rocha – SD BM<br>Auxiliar – Mat.: 89.644.501-8</td>
+            <td>Nome: <span id="vistoriador2D"></span><br>Auxiliar – Mat.: <span id="matricula2D"></span></td>
             
         </table>
         <p>Recebido por:________________________________________(Responsável pelo uso)</p>
 
       
-    </div>
-    <div>
-        <button class="bg-blue-300" onclick="preencher();Export2Doc('exportContent');">Export as .doc</button>
     </div>
         <script src="/main.js"></script>
 </body>

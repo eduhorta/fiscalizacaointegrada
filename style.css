@@ -4,7 +4,7 @@
 
 #exportContent {
     -webkit-print-color-adjust:exact !important;
-    opacity: 1;
+    opacity: 0;
 }
 
 #logoCBM {
