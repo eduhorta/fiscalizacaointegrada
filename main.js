@@ -1,3 +1,8 @@
+function preencher() {
+    const testando = document.getElementById('testando').value
+    console.log(testando)
+}
+
 function Export2Doc(element, filename = '') {
     //  _html_ will be replace with custom html
     var meta= "Mime-Version: 1.0\nContent-Base: " + location.href + "\nContent-Type: Multipart/related; boundary=\"NEXT.ITEM-BOUNDARY\";type=\"text/html\"\n\n--NEXT.ITEM-BOUNDARY\nContent-Type: text/html; charset=\"utf-8\"\nContent-Location: " + location.href + "\n\n<!DOCTYPE html>\n<html>\n_html_</html>";
