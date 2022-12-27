@@ -16,10 +16,16 @@ function preencher() {
     document.getElementById('razaoD').innerHTML = razao;
     //razaoD1 - no processo de instauração
     document.getElementById('razaoD1').innerHTML = razao;
+    //razaoD2 - no inicio do termo de notificação
+    document.getElementById('razaoD2').innerHTML = razao;
     document.getElementById('cnpjD').innerHTML = cnpj;
+    //cnpjD2 - no inicio do termo de notificação
+    document.getElementById('cnpjD2').innerHTML = cnpj;
     document.getElementById('enderecoD').innerHTML = endereco;
     //enderecoD1 - no processo de instauração
     document.getElementById('enderecoD1').innerHTML = endereco;
+    //enderecoD2 - no termo de notificação
+    document.getElementById('enderecoD2').innerHTML = endereco;
     document.getElementById('numeroD').innerHTML = numero;
     //numeroD1 - no processo de instauração
     document.getElementById('numeroD1').innerHTML = numero;
@@ -29,26 +35,40 @@ function preencher() {
     document.getElementById('cidadeD').innerHTML = cidade;
     //CidadeD1 ao final do termo de infração D1
     document.getElementById('cidadeD1').innerHTML = cidade;
-    //CidadeD2 e D3 ao final do termo de instauração
+    //CidadeD2 e D3 no termo de instauração
     document.getElementById('cidadeD2').innerHTML = cidade;
     document.getElementById('cidadeD3').innerHTML = cidade;
+    //cidadeD4 - ao final do termo de notificação
+    document.getElementById('cidadeD4').innerHTML = cidade;
     //cepD - processo de instauração
     document.getElementById('cepD').innerHTML = cep;
     document.getElementById('infracaoD').innerHTML = infracao;
     //infracaoD1 - no initicio do termo de instauração
     document.getElementById('infracaoD1').innerHTML = infracao;
     document.getElementById('notificacaoD').innerHTML = notificacao;
+    //notificacaoD1 - no inicio do termo de notificação
+    document.getElementById('notificacaoD1').innerHTML = notificacao;
     document.getElementById('vistoriador1D').innerHTML = vistoriador1;
     //Vistoriador1D1 - responsável pelo processo de instauração
     document.getElementById('vistoriador1D1').innerHTML = vistoriador1;
+    //vistoriador1D2 no termo de notificação
+    document.getElementById('vistoriador1D2').innerHTML = vistoriador1;
     document.getElementById('vistoriador2D').innerHTML = vistoriador2;
+    //vistoriador2D1 no termo de notificação
+    document.getElementById('vistoriador2D1').innerHTML = vistoriador2;
     document.getElementById('matricula1D').innerHTML = matricula1;
     //Matricula1D1 - responsável pelo processo de instauração
     document.getElementById('matricula1D1').innerHTML = matricula1;
+    //Matrícula1D2 - vistoriador no termo de notificação
+    document.getElementById('matricula1D2').innerHTML = matricula1;
     document.getElementById('matricula2D').innerHTML = matricula2;
+    //matricula2D1 - no termo de noficação
+    document.getElementById('matricula2D1').innerHTML = matricula2;
     document.getElementById('dataD').innerHTML = data;
     //dataD1 - ao final do termo de instauração
     document.getElementById('dataD1').innerHTML = data;
+    //dataD2 - no termo de notificação
+    document.getElementById('dataD2').innerHTML = data;
 }
 
 function Export2Doc(element, filename = '') {
