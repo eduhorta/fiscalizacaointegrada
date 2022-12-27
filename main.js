@@ -12,21 +12,43 @@ function preencher() {
     const matricula1 = document.getElementById('matricula1').value
     const matricula2 = document.getElementById('matricula2').value
     const data = document.getElementById('data').value
+    const cep = document.getElementById('cep').value
     document.getElementById('razaoD').innerHTML = razao;
+    //razaoD1 - no processo de instauração
+    document.getElementById('razaoD1').innerHTML = razao;
     document.getElementById('cnpjD').innerHTML = cnpj;
     document.getElementById('enderecoD').innerHTML = endereco;
+    //enderecoD1 - no processo de instauração
+    document.getElementById('enderecoD1').innerHTML = endereco;
     document.getElementById('numeroD').innerHTML = numero;
-    document.getElementById('bairroD').innerHTML = bairro;    
+    //numeroD1 - no processo de instauração
+    document.getElementById('numeroD1').innerHTML = numero;
+    document.getElementById('bairroD').innerHTML = bairro;
+    //bairroD1 - no processo de instauração    
+    document.getElementById('bairroD1').innerHTML = bairro;    
     document.getElementById('cidadeD').innerHTML = cidade;
-    //Cidade ao final do termo de infração D1
+    //CidadeD1 ao final do termo de infração D1
     document.getElementById('cidadeD1').innerHTML = cidade;
+    //CidadeD2 e D3 ao final do termo de instauração
+    document.getElementById('cidadeD2').innerHTML = cidade;
+    document.getElementById('cidadeD3').innerHTML = cidade;
+    //cepD - processo de instauração
+    document.getElementById('cepD').innerHTML = cep;
     document.getElementById('infracaoD').innerHTML = infracao;
+    //infracaoD1 - no initicio do termo de instauração
+    document.getElementById('infracaoD1').innerHTML = infracao;
     document.getElementById('notificacaoD').innerHTML = notificacao;
     document.getElementById('vistoriador1D').innerHTML = vistoriador1;
+    //Vistoriador1D1 - responsável pelo processo de instauração
+    document.getElementById('vistoriador1D1').innerHTML = vistoriador1;
     document.getElementById('vistoriador2D').innerHTML = vistoriador2;
     document.getElementById('matricula1D').innerHTML = matricula1;
+    //Matricula1D1 - responsável pelo processo de instauração
+    document.getElementById('matricula1D1').innerHTML = matricula1;
     document.getElementById('matricula2D').innerHTML = matricula2;
     document.getElementById('dataD').innerHTML = data;
+    //dataD1 - ao final do termo de instauração
+    document.getElementById('dataD1').innerHTML = data;
 }
 
 function Export2Doc(element, filename = '') {

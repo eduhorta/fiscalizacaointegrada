@@ -37,6 +37,10 @@
             <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cidade" type="text" placeholder="Cidade">
           </div>
           <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">CEP</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cep" type="text" placeholder="XX.XXX-XXX">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
             <label class="block text-gray-700 mb-2 ml-1" for="message">Nº Advertência Escrita/Infração</label>
             <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="infracao" type="text" placeholder="XXXX/202X">
           </div>
@@ -71,7 +75,9 @@
         </div>
       </form>
     <!-- DIV DO CONTEÚDO A SER EXPORTADO EM DOC -->
-    <div id="exportContent">       
+    <div id="exportContent">
+      <!-- AUTO DE INFRAÇÃO        -->
+
         <table>
             <tr>
                 <th><img style="width:100px;height:100px;" id="logoEstado" src="/img/logoEstado.jpg" alt="" srcset=""></th>
@@ -97,7 +103,24 @@
         </table>
         <p>Recebido por:________________________________________(Responsável pelo uso)</p>
 
-      
+      <!-- TERMO DE INSTAURAÇÃO PAI -->
+      <table>
+        <tr>
+            <th><img style="width:100px;height:100px;" id="logoEstado" src="/img/logoEstado.jpg" alt="" srcset=""></th>
+            <th>CORPO DE BOMBEIROS MILITAR<br>18º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS</th>
+            <th><img style="width:100px;height:100px;" id="logoCBM" src="/img/logoCBM.jpg" alt="" srcset=""></th>
+        </tr>
+    </table>
+    <p style="text-align:center"><b>TERMO DE INSTAURAÇÃO</b></p>
+    <p style="text-align:justify">O Comandante do 18º GBM, no uso da atribuição que lhe confere o § 2º do Art. 38 do Decreto Estadual Nº 16.302 de 27 de agosto de 2015, resolve instaurar o Processo Administrativo Infracional (PAI) de número <span id="infracaoD1"></span> sobre o imóvel abaixo discriminado, designando a <span id="vistoriador1D1"></span>, Mat. <span id="matricula1D1"></span>, para acompanhá-lo.</p>
+    <p>Nome: <span id="razaoD1"></span><br>Logradouro: <span id="enderecoD1"></span>, N° <span id="numeroD1"></span><br>Bairro: <span id="bairroD1"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP: <span id="cepD"></span><br>Cidade: <span id="cidadeD2"></span></p>
+    <p>Infrações apuradas: </p>
+    <p>(   ) I - deixar de adotar as medidas de segurança contra incêndio previstas no art. 3º desta Lei, em Regulamento e nas demais normas técnicas regulamentares;<br>(    ) II - instalar os sistemas de proteção contra incêndio e pânico em desacordo com as especificações do projeto ou com as normas técnicas regulamentares;<br>(   ) III - modificar as características dos sistemas e meios de proteção contra incêndio e pânico ou não fazer a manutenção adequada dos mesmos;<br>(   ) IV - ocultar, remover, inutilizar, destruir ou substituir os meios de proteção contra incêndio e pânico por outros que não atendam às exigências legais e regulamentares;<br>(   ) V - dificultar, embaraçar ou frustrar ação fiscalizadora dos vistoriadores do Corpo de Bombeiros Militar da Bahia</p>
+    <p>Área objeto da irregularidade: Detalhe da área construída: < 750 m²</p>
+    <br>
+    <p style="text-align:center"><span id="cidadeD3"></span>-BA, <span id="dataD1"></span>.</p>
+    <br>
+    <p style="text-align:center">Antonio Helber de Oliveira Fonseca Viana – TEN CEL BM<br>Comandante do 18º GBM</p>
     </div>
         <script src="/main.js"></script>
 </body>
