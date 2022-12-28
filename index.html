@@ -9,87 +9,91 @@
     <link href="/dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <meta name="google-site-verification" content="Qg2V7lV3Gxvch06iuXe0dkBqJaQo5HXWP3T5GnOtJtQ" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); </style>
 </head>
-<body>
+<body class="bg-gray-800">
+  <div id="formulario" class="px-4 py-4">
     <form class="flex flex-wrap md:flex-row">
         <div class="w-full md:w-1/2 mb-4">
-          <label class="block text-gray-700 mb-2 ml-1" for="razao">Razão Social</label>
-          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="razao" type="text" placeholder="Razão Social">
+          <label class="block text-white text-xl mb-2 ml-1" for="razao">Razão Social</label>
+          <input class="block w-11/12 bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-none focus:outline-none focus:bg-white" id="razao" type="text" placeholder="Razão Social">
         </div>
         <div class="w-full md:w-1/2 mb-4">
-          <label class="block text-gray-700 mb-2 ml-1" for="cnpj">CNPJ</label>
-          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cnpj" type="email" placeholder="XX.XXX.XXX/0001-XX">
+          <label class="block text-white text-xl mb-2 ml-1" for="cnpj">CNPJ</label>
+          <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cnpj" type="email" placeholder="XX.XXX.XXX/0001-XX">
         </div>
         <div class="w-full md:w-1/2 mb-4">
-          <label class="block text-gray-700 mb-2 ml-1" for="website">Rua/Avenida/Logradouro</label>
-          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="endereco" type="text" placeholder="Rua/Avenida Exemplo">
+          <label class="block text-white text-xl mb-2 ml-1" for="website">Rua/Avenida/Logradouro</label>
+          <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="endereco" type="text" placeholder="Rua/Avenida Exemplo">
         </div>
         <div class="w-full md:w-1/2 mb-4">
-          <label class="block text-gray-700 mb-2 ml-1" for="message">Nº da edificação</label>
-          <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="numero" type="text" placeholder="302">
+          <label class="block text-white text-xl mb-2 ml-1" for="message">Nº da edificação</label>
+          <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="numero" type="text" placeholder="302">
         </div>
         <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Bairro/Distrito</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="bairro" type="text" placeholder="Bairro/Distrito">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Bairro/Distrito</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="bairro" type="text" placeholder="Bairro/Distrito">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Cidade</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cidade" type="text" placeholder="Cidade">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Cidade</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cidade" type="text" placeholder="Cidade">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">CEP</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cep" type="text" placeholder="XX.XXX-XXX">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">CEP</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cep" type="text" placeholder="XX.XXX-XXX">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Nº Advertência Escrita/Infração</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="infracao" type="text" placeholder="XXXX/202X">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Nº Advertência Escrita/Infração</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="infracao" type="text" placeholder="XXXX/202X">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Nº Notificação</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="notificacao" type="text" placeholder="XXXX/202X">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Nº Notificação</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="notificacao" type="text" placeholder="XXXX/202X">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Vistoriador 1</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="vistoriador1" type="text" placeholder="Fulano Pereira da Silva - Sd BM">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Vistoriador 1</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="vistoriador1" type="text" placeholder="Fulano Pereira da Silva - Sd BM">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Matrícula - Vistoriador 1</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula1" type="text" placeholder="89.64X.XXX-X">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Matrícula - Vistoriador 1</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula1" type="text" placeholder="89.64X.XXX-X">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Vistoriador 2</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="vistoriador2" type="text" placeholder="Beltrano Oliveira de Jesus - Sd BM">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Vistoriador 2</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="vistoriador2" type="text" placeholder="Beltrano Oliveira de Jesus - Sd BM">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Matrícula - Vistoriador 2</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula2" type="text" placeholder="89.64X.XXX-X">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Matrícula - Vistoriador 2</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula2" type="text" placeholder="89.64X.XXX-X">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Comandante da unidade</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="comando" type="text" placeholder="João Guerra do Nascimento - Ten Cel BM">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Comandante da unidade</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="comando" type="text" placeholder="João Guerra do Nascimento - Ten Cel BM">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Chefe do SAT</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="chefe" type="text" placeholder="Maria de Oliveira Cruz - Ten BM">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Chefe do SAT</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="chefe" type="text" placeholder="Maria de Oliveira Cruz - Ten BM">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Nº do GBM</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="gbm" type="text" placeholder="18">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Nº do GBM</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="gbm" type="text" placeholder="18">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Data da fiscalização</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="data" type="text" placeholder="01 de janeiro de 2023">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Data da fiscalização</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="data" type="text" placeholder="01 de janeiro de 2023">
           </div>
           <div class="w-full md:w-1/2 mb-4">
-            <label class="block text-gray-700 mb-2 ml-1" for="message">Nota para BI/O</label>
-            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nota" type="text" placeholder="XXX/202X">
+            <label class="block text-white text-xl mb-2 ml-1" for="message">Nota para BI/O</label>
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nota" type="text" placeholder="XXX/202X">
           </div>
         <div class="w-full">
-          <button onclick="preencher();Export2Doc('exportContent');" class="bg-red-400 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-            Tudo certo!
+          <button onclick="preencher();Export2Doc('exportContent');" class="bg-blue-800 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+            Abrir PAI
           </button>
         </div>
       </form>
+    </div>
     <!-- DIV DO CONTEÚDO A SER EXPORTADO EM DOC -->
     <div id="exportContent">
       <!-- AUTO DE INFRAÇÃO        -->
@@ -169,7 +173,7 @@
   <!-- INICIO NOTA PARA BIO -->
   <table>
     <tr>
-      <span style="color: gray;">NOTA PARA BI/O N. 150/2022 de <span id="dataD3"></span>.</span>
+      <span style="color: gray;">NOTA PARA BI/O N. <span id="notaD"></span> de <span id="dataD3"></span>.</span>
     </tr>
     <tr>
         <th><img style="width:100px;height:100px;" id="logoEstado" src="/img/logoEstado.jpg" alt="" srcset=""></th>

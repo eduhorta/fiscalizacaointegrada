@@ -110,6 +110,7 @@ function preencher() {
     //gbmD5 e D6 - nota p/ BIO
     document.getElementById('gbmD5').innerHTML = gbm;
     document.getElementById('gbmD6').innerHTML = gbm;
+    document.getElementById('notaD').innerHTML = nota;
 }
 
 function Export2Doc(element, filename = '') {
