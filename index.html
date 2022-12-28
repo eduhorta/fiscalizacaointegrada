@@ -65,8 +65,24 @@
             <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula2" type="text" placeholder="89.64X.XXX-X">
           </div>
           <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Comandante da unidade</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="comando" type="text" placeholder="João Guerra do Nascimento - Ten Cel BM">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Chefe do SAT</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="chefe" type="text" placeholder="Maria de Oliveira Cruz - Ten BM">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Nº do GBM</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="gbm" type="text" placeholder="18">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
             <label class="block text-gray-700 mb-2 ml-1" for="message">Data da fiscalização</label>
             <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="data" type="text" placeholder="01 de janeiro de 2023">
+          </div>
+          <div class="w-full md:w-1/2 mb-4">
+            <label class="block text-gray-700 mb-2 ml-1" for="message">Nota para BI/O</label>
+            <input class="block w-full bg-gray-200 border border-red-400 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nota" type="text" placeholder="XXX/202X">
           </div>
         <div class="w-full">
           <button onclick="preencher();Export2Doc('exportContent');" class="bg-red-400 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
@@ -81,17 +97,17 @@
         <table>
             <tr>
                 <th><img style="width:100px;height:100px;" id="logoEstado" src="/img/logoEstado.jpg" alt="" srcset=""></th>
-                <th>Auto de Infração<br>CORPO DE BOMBEIROS MILITAR<br>18º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS</th>
+                <th>Auto de Infração<br>CORPO DE BOMBEIROS MILITAR<br><span id="gbmD"></span>º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS</th>
                 <th><img style="width:100px;height:100px;" id="logoCBM" src="/img/logoCBM.jpg" alt="" srcset=""></th>
             </tr>
         </table>
        <p style="margin-left: 80px;"><b>AUTO DE INFRAÇÃO - ADVERTÊNCIA ESCRITA Nº (<span id="infracaoD"></span>)</b></p>
        <p style="font-size:14px;"><b>Termo de Notificação de referência: nº <span id="notificacaoD"></span> </b></p>       
        <p style="text-align:justify">Fica o (a) <b>Sr. (a)___________________________________________________ CPF:_______________________,</b>                   responsável pelo <span id="razaoD"></span>, <b>CNPJ: <span id="cnpjD"></span>                                        </b>, situado (a) no (a) <span id="enderecoD"></span>                                                                                                                  ,nº <span id="numeroD"></span>, bairro <span id="bairroD"></span>             -   município de <b><span id="cidadeD"></span></b>, Estado da Bahia, na forma da Lei, <b>ADVERTIDO</b> das irregularidades verificadas na edificação, estrutura ou área de risco acima informada, constantes na notificação anexa e do descumprimento às Normas de Segurança Contra Incêndio e Pânico, por ter infringido o (s) dispositivo (s) abaixo (s) descrito (s) da <b>Lei Estadual nº 12.929 de 27 de dezembro de 2013, Art. 12:</b></p>
-       <p style="text-align:justify">(  ) I - deixar de adotar as medidas de segurança contra incêndio previstas no art. 3º desta Lei, em Regulamento e nas demais normas técnicas regulamentares; <br>(  ) II - instalar os sistemas de proteção contra incêndio e pânico em desacordo com as especificações do projeto ou com as normas técnicas regulamentares;<br>(  ) III - modificar as características dos sistemas e meios de proteção contra incêndio e pânico ou não fazer a manutenção adequada dos mesmos;<br>(  ) IV - ocultar, remover, inutilizar, destruir ou substituir os meios de proteção contra incêndio e pânico por outros que não atendam às exigências legais e regulamentares;<br>(  ) V - dificultar, embaraçar ou frustrar ação fiscalizadora dos vistoriadores do Corpo de Bombeiros Militar da Bahia.</p>
-       <p style="text-align:justify;font-size:14px;"><b><u>Observações:</u></b><br>Os detalhamentos das irregularidades observadas encontram-se descritos na notificação de referência anexa. Prazo para regularização: (  ) 15 (quinze) dias (   ) 30 (trinta) dias (   ) 60 dias.<br>O não cumprimento das exigências apresentadas na notificação de referência anexa dentro do prazo estabelecido,  sujeitará   o   infrator   a   penalidade   de   multa,   no   valor   de   R$  ___________________________________________________ , conforme previsto na TABELA 8 do Decreto Estadual nº 16.302 de 27 de agosto de 2015.</p>
+       <p style="text-align:justify;font-size: 14px;">(  ) I - deixar de adotar as medidas de segurança contra incêndio previstas no art. 3º desta Lei, em Regulamento e nas demais normas técnicas regulamentares; <br>(  ) II - instalar os sistemas de proteção contra incêndio e pânico em desacordo com as especificações do projeto ou com as normas técnicas regulamentares;<br>(  ) III - modificar as características dos sistemas e meios de proteção contra incêndio e pânico ou não fazer a manutenção adequada dos mesmos;<br>(  ) IV - ocultar, remover, inutilizar, destruir ou substituir os meios de proteção contra incêndio e pânico por outros que não atendam às exigências legais e regulamentares;<br>(  ) V - dificultar, embaraçar ou frustrar ação fiscalizadora dos vistoriadores do Corpo de Bombeiros Militar da Bahia.</p>
+       <p style="text-align:justify;font-size:14px;"><b><u>Observações:</u></b><br>Os detalhamentos das irregularidades observadas encontram-se descritos na notificação de referência anexa. Prazo para regularização: (  ) 15 (quinze) dias (   ) 30 (trinta) dias (   ) 60 dias.<br>O não cumprimento das exigências apresentadas na notificação de referência anexa dentro do prazo estabelecido,  sujeitará   o   infrator   a   penalidade   de   multa,   no   valor   de   R$  ___________(____________________________________________________________________), conforme previsto na TABELA 8 do Decreto Estadual nº 16.302 de 27 de agosto de 2015.</p>
        <p style="font-size:14px;"><b><u>Defesa e recurso:</u></b><br><span style="text-align:justify">V. S.ª poderá apresentar, no prazo de 10 (dez) dias úteis, a contar da presente data, recurso perante o Corpo de Bombeiros Militar da Bahia, de acordo previsão da Instrução Técnica nº 02.
-        De acordo com a Lei lavrei o presente auto, por ordem do Sr. TEN CEL HELBER,  comandante da OBM, que depois de lido e achado conforme, vai assinado pelos vistoriadores/fiscais e pelo responsável.
+        De acordo com a Lei lavrei o presente auto, por ordem do Sr. <span id="comandoD"></span>,  comandante da OBM, que depois de lido e achado conforme, vai assinado pelos vistoriadores/fiscais e pelo responsável.
         </span></p>
         <p style="text-align:right;font-size:14px;"> <span id="cidadeD1"></span>-BA, <span id="dataD"></span>, às &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;h &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min.</p>
         <br>
@@ -107,12 +123,12 @@
       <table>
         <tr>
             <th><img style="width:100px;height:100px;" id="logoEstado" src="/img/logoEstado.jpg" alt="" srcset=""></th>
-            <th>CORPO DE BOMBEIROS MILITAR<br>18º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS</th>
+            <th>CORPO DE BOMBEIROS MILITAR<br><span id="gbmD1"></span>º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS</th>
             <th><img style="width:100px;height:100px;" id="logoCBM" src="/img/logoCBM.jpg" alt="" srcset=""></th>
         </tr>
-    </table>
+      </table>
     <p style="text-align:center"><b>TERMO DE INSTAURAÇÃO</b></p>
-    <p style="text-align:justify">O Comandante do 18º GBM, no uso da atribuição que lhe confere o § 2º do Art. 38 do Decreto Estadual Nº 16.302 de 27 de agosto de 2015, resolve instaurar o Processo Administrativo Infracional (PAI) de número <span id="infracaoD1"></span> sobre o imóvel abaixo discriminado, designando a <span id="vistoriador1D1"></span>, Mat. <span id="matricula1D1"></span>, para acompanhá-lo.</p>
+    <p style="text-align:justify">O Comandante do <span id="gbmD2"></span>º GBM, no uso da atribuição que lhe confere o § 2º do Art. 38 do Decreto Estadual Nº 16.302 de 27 de agosto de 2015, resolve instaurar o Processo Administrativo Infracional (PAI) de número <span id="infracaoD1"></span> sobre o imóvel abaixo discriminado, designando a <span id="vistoriador1D1"></span>, Mat. <span id="matricula1D1"></span>, para acompanhá-lo.</p>
     <p>Nome: <span id="razaoD1"></span><br>Logradouro: <span id="enderecoD1"></span>, N° <span id="numeroD1"></span><br>Bairro: <span id="bairroD1"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP: <span id="cepD"></span><br>Cidade: <span id="cidadeD2"></span></p>
     <p>Infrações apuradas: </p>
     <p>(   ) I - deixar de adotar as medidas de segurança contra incêndio previstas no art. 3º desta Lei, em Regulamento e nas demais normas técnicas regulamentares;<br>(    ) II - instalar os sistemas de proteção contra incêndio e pânico em desacordo com as especificações do projeto ou com as normas técnicas regulamentares;<br>(   ) III - modificar as características dos sistemas e meios de proteção contra incêndio e pânico ou não fazer a manutenção adequada dos mesmos;<br>(   ) IV - ocultar, remover, inutilizar, destruir ou substituir os meios de proteção contra incêndio e pânico por outros que não atendam às exigências legais e regulamentares;<br>(   ) V - dificultar, embaraçar ou frustrar ação fiscalizadora dos vistoriadores do Corpo de Bombeiros Militar da Bahia</p>
@@ -120,12 +136,12 @@
     <br>
     <p style="text-align:center"><span id="cidadeD3"></span>-BA, <span id="dataD1"></span>.</p>
     <br>
-    <p style="text-align:center">Antonio Helber de Oliveira Fonseca Viana – TEN CEL BM<br>Comandante do 18º GBM</p><br><br><br><br>
+    <p style="text-align:center"><b><span id="comandoD1"></span><br>Comandante do <span id="gbmD3"></span>º GBM</b></p><br><br><br><br>
     <!-- TERMO DE NOTIFICAÇÃO -->
     <table>
       <tr>
           <th><img style="width:100px;height:100px;" id="logoEstado" src="/img/logoEstado.jpg" alt="" srcset=""></th>
-          <th>Termo de Notificação<br>CORPO DE BOMBEIROS MILITAR<br>18º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS<br>TERMO DE NOTIFICAÇÃO Nº <span id="notificacaoD1"></span></th>
+          <th>Termo de Notificação<br>CORPO DE BOMBEIROS MILITAR<br><span id="gbmD4"></span>º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS<br>TERMO DE NOTIFICAÇÃO Nº <span id="notificacaoD1"></span></th>
           <th><img style="width:100px;height:100px;" id="logoCBM" src="/img/logoCBM.jpg" alt="" srcset=""></th>
           </tr>
   </table>
@@ -135,13 +151,14 @@
     ( )Compartimentação Vertical ( ) Controle de Materiais de Acabamento ( ) Saídas de Emergência ( ) Plano de Emergência ( ) Brigada de Incêndio ( ) Iluminação de Emergência ( ) Detecção de Incêndio ( ) Alarme de Incêndio( ) Sinalização de Emergência ( ) Extintores ( ) Hidrante e Mangotinhos ( ) Chuveiros Automáticos ( ) Controle de Fumaça( ) SPDA
     ( ) Outros
   </p>
-  <p style="font-size:14px;"><b><u>Irregularidades observadas:</u></b></p>
-  <p>______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________<br>Continua (&nbsp;&nbsp;) Sim (&nbsp;&nbsp;) Não</p>
+  <p style="font-size:14px;"><b><u>Irregularidades observadas:<br></u></b>________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________<br>Continua (&nbsp;&nbsp;) Sim (&nbsp;&nbsp;) Não</p>  
   <p style="font-size:12px;"><b>Auto de Infração emitido:<br>(&nbsp;&nbsp;) Advertência escrita (&nbsp;&nbsp;) Multa (&nbsp;&nbsp;) Interdição (&nbsp;&nbsp;) Embargo  (&nbsp;&nbsp;) Cassação do AVCB<br>Prazo para regularização:<br>(&nbsp;&nbsp;) 15(quinze) dias  (&nbsp;&nbsp;) 30(trinta) dias  (&nbsp;&nbsp;) 60(sessenta) </b></p>
-  <p style="font-size:12px;text-align:justify">O responsável legal pelas instalações deverá sanar as irregularidades apontadas no prazo estabelecido, comunicando as correções através de ofício ou requerimento padrão ao Setor de Atividades Técnicas(email: gbm18.sat@cbm.ba.gov.br, funcionamento: das 08:00 às 18:00 horas), sob pena de sofrer penalidades administrativas.
+  <p style="font-size:14px;text-align:justify">O responsável legal pelas instalações deverá sanar as irregularidades apontadas no prazo estabelecido, comunicando as correções através de ofício ou requerimento padrão ao Setor de Atividades Técnicas(email: gbm18.sat@cbm.ba.gov.br, funcionamento: das 08:00 às 18:00 horas), sob pena de sofrer penalidades administrativas.
     As atividades de vistoria e fiscalização baseiam-se na Lei Estadual 12.929/13, Decreto Estadual 16.302/15, Portaria 005/16 do Comando-Geral do CBMBA, Instruções Técnicas do CBMBA e nas NBR (Normas Brasileiras Registradas) da Associação Brasileira de Normas Técnicas.
     </p>
     <p style="font-size:12px;text-align:right;"><span id="cidadeD4"></span> - BA, <span id="dataD2"></span>, às _____h_____min.</p>
+    <!--  ESPAÇO PARA FISCALIZADORES ASSINAREM -->
+    <br><br>
     <table style="font-size:14px;">
       <td>Nome: <span id="vistoriador1D2"></span><br>Vistoriador/Fiscal -Mat.: <span id="matricula1D2"></span></td>
       <td></td>
@@ -149,7 +166,41 @@
       
   </table>
   <p>Recebido por:________________________________________(Responsável pelo uso)</p>
-</div> 
+  <!-- INICIO NOTA PARA BIO -->
+  <table>
+    <tr>
+      <span style="color: gray;">NOTA PARA BI/O N. 150/2022 de <span id="dataD3"></span>.</span>
+    </tr>
+    <tr>
+        <th><img style="width:100px;height:100px;" id="logoEstado" src="/img/logoEstado.jpg" alt="" srcset=""></th>
+        <th>CORPO DE BOMBEIROS MILITAR<br><span id="gbmD5"></span>º GRUPAMENTO DE BOMBEIROS MILITAR<br>SETOR DE ATIVIDADES TÉCNICAS</th>
+        <th><img style="width:100px;height:100px;" id="logoCBM" src="/img/logoCBM.jpg" alt="" srcset=""></th>
+    </tr>
+  </table>
+  <table>
+    <td style="border:solid 0.1pt;text-align: center;">VISTO<br>DATA:&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;<br>_____________<br>COMANDO</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td style="text-align:right;"><u>NOTA PARA BI/O</u></td>
+  </table>
+  <div style="border:solid 0.1pt;padding:5px;">
+    <p style="text-align:center;"><b>PROCESSO ADMINISTRATIVO INFRACIONAL (PAI)</b></p>
+    <p style="text-align:justify">O Comandante do <span id="gbmD6"></span>º GBM, no uso da atribuição que lhe confere o § 2º do Art. 38 do Decreto Estadual Nº 16.302 de 27 de agosto de 2015, resolve instaurar o Processo Administrativo Infracional (PAI) de número <span id="infracaoD2"></span> sobre o imóvel abaixo discriminado, designando a <span id="vistoriador1D3"></span>, Mat. <span id="matricula1D3"></span>, para acompanhá-lo.</p>
+    <p>Nome: <span id="razaoD3"></span><br>Logradouro: <span id="enderecoD3"></span>, N° <span id="numeroD2"></span><br>Bairro: <span id="bairroD2"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CEP: <span id="cepD1"></span><br>Cidade: <span id="cidadeD5"></span></p>
+    <p>Infrações apuradas: </p>
+    <p style="text-align:justify">(   ) I - deixar de adotar as medidas de segurança contra incêndio previstas no art. 3º desta Lei, em Regulamento e nas demais normas técnicas regulamentares;<br>(    ) II - instalar os sistemas de proteção contra incêndio e pânico em desacordo com as especificações do projeto ou com as normas técnicas regulamentares;<br>(   ) III - modificar as características dos sistemas e meios de proteção contra incêndio e pânico ou não fazer a manutenção adequada dos mesmos;<br>(   ) IV - ocultar, remover, inutilizar, destruir ou substituir os meios de proteção contra incêndio e pânico por outros que não atendam às exigências legais e regulamentares;<br>(   ) V - dificultar, embaraçar ou frustrar ação fiscalizadora dos vistoriadores do Corpo de Bombeiros Militar da Bahia</p>
+    <p>Área objeto da irregularidade: Detalhe da área construída: < 750 m²</p>
+  </div>
+  <table>
+    <td style="text-align:center"><b><span id="chefeD"></span><br>CHEFE DO SAT</b></td>
+    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td style="border:solid 0.1pt;"><b>PUBLICADO</b><br>BI/O:__________________<br>Data: &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;<br>PÁGINA:______________<br>_______________________<br>RESP. PUBLICAÇÃO</td>
+  </table>
+</div>
 <!-- FINAL DO QUE SERÁ GERADO EM WORD -->
   
         <script src="/main.js"></script>
