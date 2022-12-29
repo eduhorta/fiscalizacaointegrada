@@ -22,7 +22,7 @@
         </div>
         <div class="w-full md:w-1/2 mb-4">
           <label class="block text-white text-xl mb-2 ml-1" for="cnpj">CNPJ</label>
-          <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cnpj" type="email" placeholder="XX.XXX.XXX/0001-XX">
+          <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cnpj" type="text" placeholder="XX.XXX.XXX/0001-XX" pattern="\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}" maxlength="18" required>
         </div>
         <div class="w-full md:w-1/2 mb-4">
           <label class="block text-white text-xl mb-2 ml-1" for="website">Rua/Avenida/Logradouro</label>
@@ -42,7 +42,7 @@
           </div>
           <div class="w-full md:w-1/2 mb-4">
             <label class="block text-white text-xl mb-2 ml-1" for="message">CEP</label>
-            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cep" type="text" placeholder="XX.XXX-XXX">
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="cep" type="text" placeholder="XX.XXX-XXX" maxlength="10">
           </div>
           <div class="w-full md:w-1/2 mb-4">
             <label class="block text-white text-xl mb-2 ml-1" for="message">Nº Advertência Escrita/Infração</label>
@@ -58,7 +58,7 @@
           </div>
           <div class="w-full md:w-1/2 mb-4">
             <label class="block text-white text-xl mb-2 ml-1" for="message">Matrícula - Vistoriador 1</label>
-            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula1" type="text" placeholder="89.64X.XXX-X">
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula1" type="text" placeholder="89.64X.XXX-X" maxlength="12">
           </div>
           <div class="w-full md:w-1/2 mb-4">
             <label class="block text-white text-xl mb-2 ml-1" for="message">Vistoriador 2</label>
@@ -66,7 +66,7 @@
           </div>
           <div class="w-full md:w-1/2 mb-4">
             <label class="block text-white text-xl mb-2 ml-1" for="message">Matrícula - Vistoriador 2</label>
-            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula2" type="text" placeholder="89.64X.XXX-X">
+            <input class="block w-11/12  bg-gray-700 text-sky-600 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="matricula2" type="text" placeholder="89.64X.XXX-X" maxlength="12">
           </div>
           <div class="w-full md:w-1/2 mb-4">
             <label class="block text-white text-xl mb-2 ml-1" for="message">Comandante da unidade</label>
@@ -209,5 +209,6 @@
 <!-- FINAL DO QUE SERÁ GERADO EM WORD -->
   
         <script src="/main.js"></script>
+        <script src="/formatacaoInput.js"></script>
 </body>
 </html>
