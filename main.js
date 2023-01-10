@@ -111,6 +111,8 @@ function preencher() {
     document.getElementById('gbmD5').innerHTML = gbm;
     document.getElementById('gbmD6').innerHTML = gbm;
     document.getElementById('notaD').innerHTML = nota;
+    //Colocando GBM no e-mail
+    document.getElementById('gbmD7').innerHTML = gbm;
 }
 
 function Export2Doc(element, filename = '') {
