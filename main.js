@@ -39,11 +39,15 @@ function preencher() {
     document.getElementById('numeroD1').innerHTML = numero;
     //numeroD2 - nota p/ BIO
     document.getElementById('numeroD2').innerHTML = numero;
+    //numeroD3 - no termo de notificação
+    document.getElementById('numeroD3').innerHTML = numero;
     document.getElementById('bairroD').innerHTML = bairro;
     //bairroD1 - no processo de instauração    
     document.getElementById('bairroD1').innerHTML = bairro; 
     //bairroD2 - nota p/ BIO   
     document.getElementById('bairroD2').innerHTML = bairro;    
+    //bairroD3 - endereço no termo de notificação
+    document.getElementById('bairroD3').innerHTML = bairro;    
     document.getElementById('cidadeD').innerHTML = cidade;
     //CidadeD1 ao final do termo de infração D1
     document.getElementById('cidadeD1').innerHTML = cidade;
